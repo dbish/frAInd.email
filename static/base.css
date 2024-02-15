@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+}
+
+.btn {
+    background-color: #BFC2F6;
+    border-radius: 13px;
+    width: 130px;
+    height: 50px;
+    color: black;
+    box-shadow: black 2px 3px 1px;
+    margin: 10px;
+}
+
+#nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#signin-button {
+    position: absolute;
+    border-radius: 0;
+    right: 0px;
+    margin: 0px;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    background-image: url("redblue.png");
+    background-repeat: repeat;
+    background-size: 162px;
+    position: fixed;
+    z-index: 5;
+}
+
+#ai-title {
+    border-radius: 13px;
+    width: 130px;
+    height: 50px;
+    color: black;
+    box-shadow: black 2px 3px 1px;
+    margin: 10px;
+    background-color: #BFC2F6;
+}
