@@ -46,3 +46,15 @@ body {
     margin: 10px;
     background-color: #BFC2F6;
 }
+
+#highlightButton {
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    text-shadow: #4475ff -2px 2px 0px;
+   
+}
