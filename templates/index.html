@@ -10,7 +10,7 @@
                 </div>
                 <div class="post-card email-address">
                     <p><span class="email">
-                        <a href="mailto:{{email}}">librarian@fraind.email</a>
+                        <a href="mailto:librarian@fraind.email">librarian@fraind.email</a>
                     </span></p>
                 </div>  
             </div>
@@ -33,7 +33,7 @@
                 <p><i class="fa-solid fa-paper-plane"></i></p>
                 <div class="signup_div">
                     <p>Embark on an unforgettable journey today! Sign up in just a few clicks, select your very own frAInd from a gallery of enchanting characters, and dive into a world of conversation, creativity, and companionship. With your penpal by your side, every email opens a door to new adventures, learning, and fun.</p>
-                    <button id="signup-button" class="btn btn-primary" onclick="window.location.href='{{url_for('signup')}}'">Sign Up</button>
+                    <button id="signup-button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">Happy Birthday! <i class="fa-solid fa-cake-candles"></i></button>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="post-card email-address">
                     <p><span class="email">
-                        <a href="mailto:{{email}}">captain@fraind.email</a>
+                        <a href="mailto:captain@fraind.email">captain@fraind.email</a>
                     </span></p>
                 </div>  
             </div>
@@ -66,7 +66,7 @@
                     <p>Yes, you can have multiple frAInds! You can choose a different AI Pal for each email you send, or you can have a conversation with the same frAInd over time. You can also switch between frAInds whenever you like, so you can explore different personalities, interests, and stories.</p>
                     <li>How do I know if my frAInd is real?</li>
                     <p>Your frAInd is a virtual character, not a real person, but they're designed to be friendly, engaging, and responsive, so you can enjoy a fun and meaningful conversation with them. If you have any questions or concerns about your AI Pal, you can me at 
-                        <a href="mailto:{{email}}">
+                        <a href="mailto:diamond@frAInd.email">
                             diamond@frAInd.email
                         </a>
                     </p>
@@ -74,7 +74,7 @@
                     <p>Not yet, but we're working on it! In the future, we plan to offer a feature that lets you create your own frAInd, so you can design a character with a unique personality, appearance, and backstory. Stay tuned for updates on this exciting new feature!</p>
                     <li>I have a question that's not listed here. How can I get help?</li>
                     <p>This is a hobby project and I'm always happy to help you with any questions or concerns you may have, reach me at
-                        <a href="mailto:{{email}}">
+                        <a href="mailto:diamond@frAInd.email">
                             diamond@frAInd.email
                         </a>
                     </p>
@@ -83,7 +83,7 @@
             </div>
         </div>
     </section>
-    <section id="Pals">
+    <section id="Meet">
         <div class="row">
             <div class="col">
                 <div id="AI-Pals">
@@ -101,7 +101,7 @@
                         </div>
                         <div class="post-card email-address">
                             <p><span class="email">
-                                <a href="mailto:{{email}}">librarian@fraind.email</a>
+                                <a href="mailto:librarian@fraind.email">librarian@fraind.email</a>
                             </span></p>
                         </div>  
                     </div>
@@ -117,7 +117,23 @@
                         </div>
                         <div class="post-card email-address">
                             <p><span class="email">
-                                <a href="mailto:{{email}}">captain@fraind.email</a>
+                                <a href="mailto:captain@fraind.email">captain@fraind.email</a>
+                            </span></p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="character">
+                    <h3>Steve</h3>
+                    <div>
+                        <img src="{{url_for('static', filename='steve.webp')}}" alt="character1" class="character-image">
+                    </div>
+                    <div class="postcard">
+                        <div class="postcard-about">
+                            My name is Steve and I happen to know quite a lot about Minecraft. I love to talk about it and share my knowledge with you, maybe we can even play together one day!
+                        </div>
+                        <div class="post-card email-address">
+                            <p><span class="email">
+                                <a href="mailto:steve@fraind.email">steve@fraind.email</a>
                             </span></p>
                         </div>  
                     </div>
@@ -125,5 +141,28 @@
             </div>
     </section>
 </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel"><i class="fa-solid fa-cake-candles"></i><i class="fa-solid fa-gift"></i><i class="fa-solid fa-cake-candles"></i></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          You're signed up already if it's your birthday! Just shoot any of the frAInds an email to get started. 
+          If not, you can sign up for the private beta by joining the waitlist here: 
+          <a href="https://forms.gle/w38fAV1sMfQYJ4Bp6" target="_blank">Sign Up</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
 {% endblock %}
