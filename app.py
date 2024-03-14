@@ -38,9 +38,17 @@ def faqs():
 def about():
     return render_template('about.html')
 
+@app.route('/augmAIl')
+def augmAIl():
+    return render_template('augmAIl.html')
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon') 
+
+@app.route('/gpt_send_email', methods=['POST'])
+def gpt_send_email():
+    return 'test'
 
 @app.route('/logout')
 def logout():

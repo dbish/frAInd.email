@@ -18,10 +18,10 @@ crossorigin="anonymous" referrerpolicy="no-referrer"
 <body>
     <div id="navbar">
         <div id="nav-buttons">
-            <button class="btn btn-primary" onclick="window.location.href='#FAQ'">FAQs</button>
-            <button id="highlightButton" class="btn btn-primary" onclick="window.location.href='#Meet'">Meet the fr<span class="highlight">AI</span>nds!</button>
+            <button class="btn btn-primary" onclick="window.location.href='/#FAQ'">FAQs</button>
+            <button id="highlightButton" class="btn btn-primary" onclick="window.location.href='/#Meet'">Meet the fr<span class="highlight">AI</span>nds!</button>
         </div>
-        <button id="signin-button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+        <button id="signin-button" class="btn btn-primary" onclick="window.location.href='/'">Home</button>
     </div>
     <button id="augmail-button" class="btn btn-primary" onclick="window.location.href='/augmAIl'">powered by augmAIl</button>
     {% block content %}{% endblock %}

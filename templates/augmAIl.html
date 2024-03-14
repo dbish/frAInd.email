@@ -1,0 +1,74 @@
+{% extends "baseMail.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='index.css')}}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='augmail.css')}}"></script>
+<div id="content">
+    <div class="container">
+        <header>
+            <h1>AugMail: The Email Platform for AI</h1>
+            <p>Helping AI augment email, one agent at a time.</p>
+        </header>
+        
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>To create an easy-to-use email platform for any AI agent/assistant/GPT type application, enhancing privacy and user control as AI integration into email grows.</p>
+        </section>
+        
+        <section class="invitation">
+            <h2>Join the Movement</h2>
+            <p>We're starting with key players like you, leveraging AI to manage and understand email communications better. Our early project demonstrates capabilities with GPT4, promising a future where email is more intelligent and responsive than ever.</p>
+        </section>
+        
+        <section class="call-to-action">
+            <h2>Be Part of the Innovation</h2>
+            <p>Your insights can shape the future of AI email integration. By joining us, you get to influence the development of an MVP that not only meets but exceeds your in-house solutions, freeing you to focus more on your core products.</p>
+        </section>
+        
+        <section class="privacy">
+            <h2>Privacy at Forefront</h2>
+            <p>Privacy is paramount. We're considering establishing a privacy council to ensure ethical standards and user control. Your participation now could shape how AI and email interact safely and securely.</p>
+        </section>
+        
+        <section class="early-tech">
+            <h2>Early Tech Glimpse</h2>
+            <p>Discover what AugMail offers out of the box. From AI access to email inboxes to comprehensive user control over AI permissions, AugMail is setting the stage for the future of email communication.</p>
+        </section>
+        <section>
+            <h2>Features: For End Users</h2>
+            <ol>
+                <li>Giving GPTs/AI Agents + Systems access to personal email, without having to hand off a password to each one, a unifying platform for all, with privacy in mind when routing between them.</li>
+                <li>Example: Trying out a new GPT you might not know the developer of, or are you a business that wants to give AI access to your customer support, while also letting another AI keep track of your customers, you can give all of these access to the same inbox, without having to give any of them your password or set up 3 times.</li>
+                <li>Think of it like an AI mailbox/clearing room, it can make sure that there is a flow between GPTs if you want, and make sure your inbox is not being hit by multiple programs many times a day.</li>
+                <li>Example: Decide which emails go to which AI, and even if you should stop processing them when one of the AIs handles it.</li>
+                <li>View a separate “inbox” you can login to to see what AIs have access to right now and delete or change rules around what gets there and customize routing.</li>
+                <li>Data is synced from your main inbox but allows for privacy preserving filters.</li>
+                <li>Add whitelists/blacklists based on who it’s from, subject, etc. or rules to route to only specific AIs the info they might need.</li>
+            </ol>
+        </section>
+        
+        <section class="glimpse">
+            <h2>Features: For AIs (and their devs)</h2>
+            <ol>
+                <li>No worrying about the UX and signup process for end users to access their email, just give them a link to AugMail with your app or have them lookup your app there, and they can grant you permissions there.</li>
+                <li>Example: Hate having to onboard every new customer and deal with issues with App passwords or Google login vs. Yahoo login vs. whatever else is out there, don’t, that’s all handled for you.</li>
+                <li>No need to waste time and money processing every email that comes to your customers’ inboxes, set up query patterns or quick checks that are done by AugMail first and calls your hook only when there is a relevant piece of mail.</li>
+                <li>Example: Want to only get emails with a purchase order ID or from a specific set of users or with a certain subject line? Define those rules and don’t get any other calls to your system, just give us the rules and a callback API to send the data to when it does match what you’re looking for.</li>
+                <li>No email parsing messiness to figure out conversations, recent emails, etc., easy APIs to get the most recent reply and keep a conversation history in sync.</li>
+                <li>Example: Even getting the most recent email reply can differ between email providers, not to mention tracking a conversation over time with multiple people. That’s all handled for you and you get a json blob that has the most recent reply and the history with customizable callbacks.</li>
+                <li>Separate hooks for attachments, if you want to process images with a certain model or PDFs, just give the callback and define that rule.</li>
+                <li>Example: Define your AIs capabilities to include certain attachment types and either call separate APIs with a callback for them, or send them along with any matching emails depending on your needs.</li>
+                <li>Set up and send/receive email from your own new inbox in your domain any time, not just from end user emails if you have an inbox that is AI run and answered by them.</li>
+                <li>Example: Does your AI have its own inbox? Great, no onboarding of a separate customer, just onboard that inbox and define whitelist/blacklist rules (updated as needed through an API) and get them reading and answering their own email.</li>
+                <li>APIs for human/AI collaboration to make it clear when you were not able to handle an email or to flag an issue or draft for a human to check.</li>
+                <li>Example: Helping with customer support but need a human called in or an email to be marked as read but unable to answer with a proposed draft? Use our APIs to send this to the human owner of your inbox with all the context.</li>
+            </ol>
+            <p>Much more on the horizon, email diamond@augmend.com for requests or partnerships.</p>
+        </section>
+        
+        
+        <footer>
+            <p>Interested in shaping the future of AI-driven email? <a href="#signup">Sign up for our waitlist</a> and let's chat.</p>
+        </footer>
+    </div>
+</div>
+{% endblock %}

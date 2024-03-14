@@ -58,3 +58,19 @@ body {
     text-shadow: #4475ff -2px 2px 0px;
    
 }
+
+#augmail-button {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    background-color: #c1f609;
+    margin-right: 0;
+    font-family: monospace;
+    font-size: small;
+    border-radius: 0;
+    border: none;
+}
